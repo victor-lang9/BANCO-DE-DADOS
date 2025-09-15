@@ -126,7 +126,6 @@ INSERT INTO PERSONAGEM (CodFilme, CodAtor, Personagem, Dinheiro) VALUES
 ('f8',  'a3', 'Bette', 3000000),
 ('f9',  'a9', 'Blade', 10000000);   
 
-/*atividades começando*/
 SET SQL_SAFE_UPDATES = 0;
 
 
@@ -134,4 +133,111 @@ UPDATE ATOR
 SET Nacionalidade = 'Reino Unido'
 WHERE NomeArtistico = 'Antony Hopkins';
 
-SELECT * FROM ATOR WHERE NomeArtistico = 'Antony Hopkins';
+UPDATE ATOR
+SET NomeArtistico = 'William Hurt'
+WHERE CodAtor = 'a10';
+
+UPDATE ATOR
+SET Idade = 36
+WHERE NomeArtistico = 'Nicole Kidman';
+
+SELECT * FROM ATOR WHERE NomeArtistico = 'Nicole Kidman';
+
+UPDATE FILME
+SET Orcamento = 20000000
+WHERE NomeFilme = 'Passageiro 57';
+
+SELECT * FROM FILME WHERE NomeFilme = 'Passageiro 57';
+
+UPDATE FILME
+SET NomeFilme = 'Quem vai ficar com Mary?'
+WHERE NomeFilme = 'Quem vai ficar com Marry ?';
+
+SELECT * FROM FILME WHERE CodFilme = 'f13';
+
+UPDATE PERSONAGEM
+SET Dinheiro = 25000000
+WHERE CodFilme = 'f26' AND CodAtor = 'a15';
+
+SELECT * FROM PERSONAGEM WHERE CodFilme = 'f26' AND CodAtor = 'a15';
+
+UPDATE PERSONAGEM
+SET Personagem = 'Stanley Ipkiss'
+WHERE CodFilme = 'f18' AND CodAtor = 'a17';
+
+SELECT * FROM PERSONAGEM WHERE CodFilme = 'f18' AND CodAtor = 'a17';
+
+UPDATE ATOR
+SET NomeReal = 'William Bradley Pitt'
+WHERE CodAtor = 'a2';
+
+SELECT * FROM ATOR WHERE CodAtor = 'a2';
+
+UPDATE FILME
+SET AnoFilme = 1994
+WHERE CodFilme = 'f26';
+
+SELECT * FROM FILME WHERE CodFilme = 'f26';
+
+UPDATE FILME
+SET Tempo = 120
+WHERE CodFilme = 'f1';
+
+SELECT * FROM FILME WHERE CodFilme = 'f1';
+
+SELECT * FROM ATOR WHERE NomeArtistico = 'Antony Hopkins';	
+
+DELETE FROM PERSONAGEM WHERE CodAtor = 'a1';
+
+SELECT * FROM PERSONAGEM WHERE CodAtor = 'a1';
+
+DELETE FROM ATOR WHERE CodAtor = 'a1';
+
+SELECT * FROM ATOR WHERE CodAtor = 'a1';
+
+DELETE FROM PERSONAGEM
+WHERE CodFilme = 'f4' AND CodAtor = 'a3' AND Personagem = 'Mary';
+
+SELECT * FROM PERSONAGEM WHERE CodFilme = 'f4' AND CodAtor = 'a3' AND Personagem = 'Mary';
+
+DELETE FROM PERSONAGEM WHERE CodFilme = 'f9';
+
+DELETE FROM FILME WHERE CodFilme = 'f9';
+
+SELECT * FROM FILME WHERE CodFilme = 'f9';
+
+DELETE FROM PERSONAGEM WHERE CodFilme = 'f7' AND CodAtor = 'a8';
+
+SELECT * FROM PERSONAGEM WHERE CodFilme = 'f7' AND CodAtor = 'a8';
+
+DELETE FROM PERSONAGEM WHERE CodFilme = 'f1' AND CodAtor = 'a1';
+
+SELECT * FROM PERSONAGEM WHERE CodFilme = 'f1' AND CodAtor = 'a1';
+
+DELETE FROM PERSONAGEM WHERE CodFilme = 'f4' AND CodAtor = 'a4' AND Personagem = 'Tootsie';
+
+SELECT * FROM PERSONAGEM WHERE CodFilme = 'f4' AND CodAtor = 'a4' AND Personagem = 'Tootsie';
+
+DELETE FROM PERSONAGEM WHERE CodFilme = 'f19' AND CodAtor = 'a5' AND Personagem = 'Aranha';
+
+SELECT * FROM PERSONAGEM WHERE CodFilme = 'f19' AND CodAtor = 'a5' AND Personagem = 'Aranha';
+
+DELETE FROM PERSONAGEM WHERE CodFilme = 'f13' AND CodAtor = 'a20' AND Personagem = 'Mary';
+
+SELECT * FROM PERSONAGEM WHERE CodFilme = 'f13' AND CodAtor = 'a20' AND Personagem = 'Mary';
+
+DELETE FROM PERSONAGEM WHERE CodFilme = 'f5';
+
+DELETE FROM FILME WHERE CodFilme = 'f5';
+
+SELECT * FROM FILME WHERE CodFilme = 'f5';
+
+DELETE FROM ATOR WHERE CodAtor = 'a22';
+
+SELECT * FROM ATOR WHERE CodAtor = 'a22';
+
+
+
+
+
+
